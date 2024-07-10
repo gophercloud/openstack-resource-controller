@@ -1,0 +1,12 @@
+# Copyright (c) 2024 VEXXHOST, Inc.
+# SPDX-License-Identifier: Apache-2.0
+
+- project:
+    check:
+      jobs:
+        - openstack-resource-controller-go-test
+        - openstack-resource-controller-go-vet
+    gate:
+      jobs:
+        - openstack-resource-controller-go-test
+        - openstack-resource-controller-go-vet
